@@ -31,7 +31,7 @@ class Agent:
 		self.memory.memory_size = value
 
 	def reset_memory(self):
-		self.exp_replay.reset_memory()
+		self.memory.reset_memory()
 
 	def check_game_compatibility(self, game):
 		game_output_shape = (1, None) + game.get_frame().shape
